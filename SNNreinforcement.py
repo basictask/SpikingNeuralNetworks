@@ -76,9 +76,6 @@ class Net(nn.Module):
         return x, [torch.stack(spk1_rec, dim=0), torch.stack(spk2_rec, dim=0), torch.stack(spk3_rec, dim=0),
                 torch.stack(mem1_rec, dim=0), torch.stack(mem2_rec, dim=0), torch.stack(mem3_rec, dim=0)], \
                torch.stack(mem3_rec, dim=0)
-        # '''
-
-
 
 class Agent(object):
     def __init__(self, lr, gamma, mem_size, n_actions, epsilon, batch_size, input_dims, epsilon_dec=0.99988,
