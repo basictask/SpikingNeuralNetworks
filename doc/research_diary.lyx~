@@ -86,6 +86,10 @@
 Research Diary
 \end_layout
 
+\begin_layout Subtitle
+Advanced Deep Network Development
+\end_layout
+
 \begin_layout Author
 Daniel Kuknyo
 \end_layout
@@ -96,6 +100,21 @@ Daniel Kuknyo
 
 \begin_layout Institute
 ELTE IK
+\end_layout
+
+\begin_layout Subtitle
+Please visit the project site for more: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/basictask/SpikingNeuralNetworks/tree/daniel
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Frame
