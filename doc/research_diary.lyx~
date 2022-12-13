@@ -1,0 +1,697 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\useoutertheme{wuerzburg}
+\useinnertheme[outline, shadow]{chamfered}
+\usecolortheme{shark}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Research Diary
+\end_layout
+
+\begin_layout Author
+Daniel Kuknyo
+\end_layout
+
+\begin_layout Date
+2022/23 Fall Semester
+\end_layout
+
+\begin_layout Institute
+ELTE IK
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We've received the code base from our supervisor.
+ 
+\end_layout
+
+\begin_layout Itemize
+We've spent most of our work to debug the code.
+\end_layout
+
+\begin_layout Itemize
+Got it up and running on everyone's environment.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Everyone chooses their own environment: discrete, continuous, convolutional.
+ 
+\end_layout
+
+\begin_layout Itemize
+In my case the problem is the continuous control.
+ 
+\end_layout
+
+\begin_layout Itemize
+The environment is BipedalWalker.
+ Goal: to predict the inclination angles of the joints at each time frame.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bipedalwalker.png
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 3.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The chosen environment is tested with the base code.
+ 
+\end_layout
+
+\begin_layout Itemize
+Q-learning is implemented.
+ It's not performing well.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_11_14_08_13_41_scores.png
+	lyxscale 10
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 4.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Action space discretization is implemented.
+ 
+\end_layout
+
+\begin_layout Itemize
+I have developed an approach that subdivides a large action vector into
+ separate angles.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 3.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Soft actor-critic model is implemented.
+ 
+\end_layout
+
+\begin_layout Itemize
+The performance is increasing.
+ 
+\end_layout
+
+\begin_layout Itemize
+It's two of the same architectures of Q-learning models with different input/out
+put sizes.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename SAC_model.png
+	lyxscale 30
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 5.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The soft actor-critic with Q-learning was not a big success.
+ 
+\end_layout
+
+\begin_layout Itemize
+The next step was to implement continuous control for soft actor-critic
+ models.
+\end_layout
+
+\begin_layout Itemize
+In this case the model is directly predicting the inclination angles for
+ the 4 joints of the walker.
+ 
+\end_layout
+
+\begin_layout Itemize
+From now on the networks have different architectures, usually the actor
+ has more neurons.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_11_18_16_31_17_distances.png
+	lyxscale 10
+	width 4cm
+	height 4cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 6.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The soft actor critic was the best model so far, but the environment still
+ wasn't solved very well.
+\end_layout
+
+\begin_layout Itemize
+This gave reason for further experimentation.
+ The next architecture to be implemented was to add another critic to the
+ prediction process.
+\end_layout
+
+\begin_layout Itemize
+This is called the TD3 architecture.
+ The first model is based on spiking neural networks for both critics and
+ the actor as well.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Structure-of-TD3-Twin-Delayed-Deep-Deterministic-Policy-Gradient-with-RAMDP-1663380331.jpeg
+	lyxscale 50
+	width 7cm
+	height 7cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 7.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+I had a lot of trust in the TD3 architecture.
+ 
+\end_layout
+
+\begin_layout Itemize
+It takes a lot of time to teach however.
+ 
+\end_layout
+
+\begin_layout Itemize
+The next week was only based on teaching and hyperparameter fine-tuning.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_12_03_09_09_31_distances.png
+	lyxscale 10
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_11_23_09_49_07_mean_distances.png
+	lyxscale 10
+	width 5cm
+	height 5cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Week 8.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The last model to be implemented is an experiment that's based on involving
+ a regular feedforward network as the actor while keeping the 2 spiking
+ critic networks.
+ 
+\end_layout
+
+\begin_layout Itemize
+This model was by far the best performing.
+ This can be attributed to the fact that sometimes the spiking networks
+ have outliers as outputs.
+ 
+\end_layout
+
+\begin_layout Itemize
+The BipedalWalker environment is not robust to noise.
+ It's very easy to tip the walker because it's unbalanced by default.
+ 
+\end_layout
+
+\begin_layout Itemize
+Below two separate runs can be seen with different parameters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_11_29_14_04_37_mean_distances.png
+	lyxscale 10
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/daniel/Documents/ELTE/3/Applied Deep Learning/daniel_branch/SpikingNeuralNetworks/results/bipedalwalker_v3_2022_12_03_09_09_31_mean_distances.png
+	lyxscale 10
+	width 3cm
+	height 3cm
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

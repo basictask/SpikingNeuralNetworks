@@ -6,8 +6,8 @@ In continuous control the prediction is aimed not at Q-values as there is no dis
 For BipedalWalker the action space is a 4-element vector. Each vector represents an angle for the corresponding joint of the BipedalWalker. The state space is a 24-element vector. 
 The goal of the agent is to walk to the destination on an uneven surface. 
 ### Folder structure
-1. Models: trained model weights for the different models
-2. Notebooks: implemented algorithms in Jupyter Notebook format
-3. Results: running logs for learning: epsilon history, rewards and mean rewards
+1. models: trained model weights for the different models
+2. notebooks: implemented algorithms in Jupyter Notebook format
+3. results: running logs for learning: epsilon history, rewards and mean rewards
 4. scoreboards: scoring for competitive running in csv files
 

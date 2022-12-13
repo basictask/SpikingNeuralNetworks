@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Self-defined types
+*.sty
+*.odf
+*.lyx
+*.lyx#
+doc/*.png
+*.dot
+
